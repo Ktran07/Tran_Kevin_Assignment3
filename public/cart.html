@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Xmas Cart</title>
+
+<script src="./products.js" type="text/javascript"></script>
+<!--get cart JS-->
+<script src="./get_cart.js" type="text/javascript"></script>
+<script src="cart.js"></script>
+</head>
+
+<body>
+<section class="container mt-5" id="invoice-table" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div class="row justify-content-center">
+    <h1><b>🎁 Current Cart🎁</b></h1>
+<!--form to post cart quantity updates-->
+<form action="./update_cart" id="updateCart" method="POST">
+  <div class="col-md-12">
+
+<!--SAME AS INVOICE.JS-->
+<table class="table table-bordered border-christmas" style="background-color: #ffffff; border-radius: 10px; overflow: hidden; width: 100%; font-size: 18px;">
+  <thead style="background-color: #d32f2f; color: #ffffff;">
+        <tr>
+            <th style="width: 50px;"></th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Extended Price</th>
+        </tr>
+    </thead>
+    <tbody id="invoiceTableBody">
+    </tbody>
+</table>
+
+
+
+
+<input class="purchase_button" id="purchase_button" type="submit" value="Update Cart"/>
+</div>
+</div></form>
+
+<!-- ASSIGNMENT 3 -->
+<!--go to INVOICE PAGE from cart.html -->
+<a href="./checkout"><button>Proceed to Payment</button></a>
+
+</section>
+</body>
+</html>
