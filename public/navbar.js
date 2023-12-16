@@ -21,4 +21,4 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Hide the navigation item if it corresponds to the current page
                 item.style.display = 'none';
             }   }    );    }
-});
+})
